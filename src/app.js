@@ -4,6 +4,8 @@ const hbs = require('hbs')
 const geocode = require('./utils.js/des_geocode')
 const forecast = require('./utils.js/des_forecast')
 
+const port = process.env.PORT || 3000    
+
 /* console.log(__dirname)
 //console.log(__filename)
 console.log(path.join(__dirname, '..')) */
@@ -160,6 +162,13 @@ app.get('*', (req, res)=>{
 
 
 
-app.listen(3000, ()=>{
+/* app.listen(3000, ()=>{
+//app.listen(port, ()=>{   SUPPOSE TO BE
     console.log('Server is up on port 3000...')
+    //console.log('Server is up on port ' + port)   SUPPOSE TO BE
+}) */
+
+
+app.listen(port, ()=>{
+    console.log('Server is up on ' + port)
 })
