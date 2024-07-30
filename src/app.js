@@ -30,14 +30,14 @@ app.use(express.static(publicDirectoryPath))
 app.get('', (req, res)=>{
     res.render('index', {
         title: 'Weather App - get daily forecast',
-        name: 'Harvey Dent'
+        name: 'Charles@Devops'
     })
 })
 
 app.get('/about', (req, res)=>{
     res.render('about', {
         title: 'About Dog',
-        name: 'Tom Hardy'
+        name: 'Charles@Devops'
     })
 })
 
@@ -45,14 +45,14 @@ app.get('/help',(req, res)=>{
     res.render('Help', {
         helpText: 'demo text - use here',
         title: 'Please HELP',
-        name: 'provide assistance'
+        name: 'Charles@Devops'
     })
 })
 
 app.get('/footer', (req, res)=>{
     res.send('footer', {
         footer: 'this is the footer',
-        name: "developer's Name"
+        name: "Charles@Devops"
     })
 })
 
